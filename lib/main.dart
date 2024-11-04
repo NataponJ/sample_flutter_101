@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample_flutter_101/screens/index.dart';
 
 void main() {
   var app = MaterialApp(
@@ -9,7 +10,7 @@ void main() {
         backgroundColor: Colors.blue,
         centerTitle: true,
       ),
-      body: const Text("Hello Flutter"),
+      body: const Home(),
     ),
   );
   runApp(app);
