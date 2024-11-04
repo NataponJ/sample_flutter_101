@@ -5,7 +5,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -14,9 +14,9 @@ class Home extends StatelessWidget {
           margin: const EdgeInsets.all(10),
           padding: const EdgeInsets.all(8),
           child: const Text(
-            "Children Container 1",
+            "Child 1",
             style: TextStyle(
-              fontSize: 30,
+              fontSize: 20,
               letterSpacing: 3,
             ),
           ),
@@ -26,9 +26,9 @@ class Home extends StatelessWidget {
           margin: const EdgeInsets.all(10),
           padding: const EdgeInsets.all(8),
           child: const Text(
-            "Children Container 2",
+            "Child 2",
             style: TextStyle(
-              fontSize: 30,
+              fontSize: 20,
               letterSpacing: 3,
             ),
           ),
@@ -38,9 +38,9 @@ class Home extends StatelessWidget {
           margin: const EdgeInsets.all(10),
           padding: const EdgeInsets.all(8),
           child: const Text(
-            "Children Container 3",
+            "Child 3",
             style: TextStyle(
-              fontSize: 30,
+              fontSize: 20,
               letterSpacing: 3,
             ),
           ),
