@@ -5,46 +5,31 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
-          color: Colors.orange[100],
-          margin: const EdgeInsets.all(10),
-          padding: const EdgeInsets.all(8),
-          child: const Text(
-            "Child 1",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-            ),
-          ),
+        Image.network(
+          "https://storage.googleapis.com/cms-storage-bucket/c823e53b3a1a7b0d36a9.png",
+          width: 100,
+          height: 100,
         ),
-        Container(
-          color: Colors.blue[100],
-          margin: const EdgeInsets.all(10),
-          padding: const EdgeInsets.all(8),
-          child: const Text(
-            "Child 2",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-            ),
-          ),
+        const SizedBox(
+          height: 30,
         ),
-        Container(
-          color: Colors.green[100],
-          margin: const EdgeInsets.all(10),
-          padding: const EdgeInsets.all(8),
-          child: const Text(
-            "Child 3",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-            ),
-          ),
+        Image.asset(
+          "assets/images/FB_IMG_1607707421479.jpg",
+          width: 100,
+          height: 100,
         ),
+        const SizedBox(
+          height: 30,
+        ),
+        Image.asset(
+          "assets/images/FB_IMG_1607707421479.jpg",
+          width: 150,
+          height: 150,
+        )
       ],
     );
   }
